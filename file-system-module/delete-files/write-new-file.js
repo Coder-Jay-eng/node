@@ -8,9 +8,17 @@ http
         The empty file is for writing because of the 'w' flag
         */
       if (err) {
-        console.error('file already exists!');
+        res.writeHead(500, { 'Content-Type': 'text/html' });
+
+        console.error('File already exists!');
+
+        return res.end('File already exists!');
       } else {
-        console.log('New file created succesfully!');
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+
+        console.log('File successfully created!');
+
+        return res.end('File successfully created');
       }
     });
   })
