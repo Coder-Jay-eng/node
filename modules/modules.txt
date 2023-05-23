@@ -1,7 +1,0 @@
-Modules are a set of functions you want to include in the application.
-
-Node.js has a set of built-in modules, but you can also include a module using the 
-require() function with the name of the module i.e:
-
-
-var http = require('http');
