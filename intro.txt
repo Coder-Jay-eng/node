@@ -1,0 +1,5 @@
+Node.js eliminates the waiting time between one request and the next one.
+
+Node.js files must be initialialised in the Command Line Interface prograam of the computer
+
+Write node.js on the CLI.
