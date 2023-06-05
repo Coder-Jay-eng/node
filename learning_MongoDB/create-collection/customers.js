@@ -5,6 +5,7 @@ MongoClient.connect(url, function (err, db) {
   if (err) throw err;
   var dbo = db.db('mydb');
   dbo.createCollection('customers', function (err, res) {
+    console.log('Collection created!');
     if (err) throw err;
     console.log('Collection created!');
     db.close();
